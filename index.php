@@ -189,7 +189,6 @@ $app->post('/productos', function () use ($app, $db) {
         "'{$data['imagen']}'" .
         ");";
 
-    var_dump($query);
     $insert = $db->query($query);
 
     $result = array(
